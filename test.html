@@ -11,6 +11,33 @@ body, html {
   color: #777;
 }
 
+nav {
+	background-color: transparent;
+	margin: 0;
+	overflow: hidden;
+}
+
+nav ul{
+	float: right;
+	margin: 10px;
+	padding: 10px;
+}
+nav ul li{
+	display: inline-block;
+	list-style-type: none;
+}
+nav > ul > li > a {
+	font-size: 16px;
+	margin: 30px;
+	color: black;
+	display: block;
+	line-height: 2em;
+	text-decoration: none;
+}
+
+
+
+
 .bgimg-1, .bgimg-2, .bgimg-3 {
   position: relative;
   opacity: 0.65;
@@ -69,7 +96,22 @@ h3 {
 
 <body>
 
+
+
 <div class="bgimg-1">
+
+
+<nav>
+	<img src="logo.png" style="width:200px;height:150px;padding: 10px">
+	<ul>
+		<li><a
+			href="home.html">Home</a></li>
+		<li><a
+			href="thing1.html">thing1</a></li>
+		<li><a
+			href="thing2.html">thing2</a></li>
+	</ul>
+</nav>
   <div class="caption">
     <span class="border">Drone Site Header Here</span>
   </div>
