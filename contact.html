@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			
+			body, html {
+			height: 100%;
+			margin: 0;
+			font: 400 15px/1.8 "Lato", sans-serif;
+			color #777;
+			}
+			
+			nav {
+				background-color: transparent;
+				margin: 0;
+				overflow: hidden;
+			}
+			
+			nav ul {
+				float: right;
+				margin: 10px;
+				padding: 10px;
+			}
+			
+			nav ul li{
+				display: inline-block;
+				list-style-type: none;
+			}
+			
+			nav > ul > li > a {
+				font-size: 16px;
+				margin: 30px;
+				color: black;
+				display: block;
+				line-height: 2em;
+				text-decoration: none;
+			}
+			
+			.bgimg-1 {
+			position: relative;
+			opacity: 0.65;
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			}
+			
+			.bgimg-1 {
+			background-image: url("img1.jpg");
+			min-height: 50%;
+			}
+
+			.caption {
+			position: absolute;
+			left: 0;
+			top: 50%;
+			width: 100%;
+			text-align: center;
+			color: #000;
+			}
+
+			.caption span.border {
+			background-color: #111;
+			color: #fff;
+			padding: 18px;
+			font-size: 25px;
+			letter-spacing: 10px;
+			}
+
+			h3 {
+			letter-spacing: 5px;
+			text-transform: uppercase;
+			font: 20px "Lato", sans-serif;
+			color: #111;
+			}
+
+			/* Turn off parallax scrolling for tablets and phones */
+			@media only screen and (max-device-width: 1024px) {
+				.bgimg-1 {
+					background-attachment: scroll;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="bgimg-1">
+			<nav>
+				<img src="logo.png" style="width:200px;height:150px;padding: 10px">
+				<ul>
+					<li>
+						<a href="test.html">Home</a>
+					</li>
+					<li>
+						<a href="about.html">About</a>
+					</li>
+					<li>
+						<a href="gallery.html">Gallery</a>
+					</li>
+					<li>
+						<a href="contact.html">Contact</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="caption">
+				<span class="border"> Skyline Visual Productions</span>
+			</div>
+		</div>
+		
+		<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+			<h3 style="text-align:center;">Contact Us</h3>
+		
+	</body>
+</html>
