@@ -9,6 +9,11 @@
 			font: 400 15px/1.8 "Lato", sans-serif;
 			color #777;
 			}
+
+			form {
+				width: 400px
+				margin: 0 auto;
+			}
 			
 			nav {
 				background-color: transparent;
@@ -67,6 +72,19 @@
 			letter-spacing: 10px;
 			}
 
+			.button {
+    		background-color: #555555;
+    		border: none;
+    		color: white;
+    		padding: 15px 32px;
+    		text-align: center;
+    		text-decoration: none;
+    		display: inline-block;
+    		font-size: 16px;
+			}
+
+			.sub_button {border-radius: 4px;}
+
 			h3 {
 			letter-spacing: 5px;
 			text-transform: uppercase;
@@ -108,6 +126,64 @@
 		
 		<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
 			<h3 style="text-align:center;">Contact Us</h3>
+			<form>
+				<table align="center">
+				<tr>
+					<td>
+						Name*
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="text" name="firstName" 
+						size="25" required />
+					
+						<input type="text" name="lastName"
+						size="25" required />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Email*
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="email" name="email" 
+						size="53" required />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Subject*
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="text" name="subject"
+						size="53" required />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Message*
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<textarea cols="52" rows="10" 
+						name="message" ></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input class="button sub_button" 
+						type="submit" name="submit_button"
+						value="SUBMIT" />
+					</td>
+				</tr>
+			</form>
+		</div>
 		
 	</body>
 </html>
