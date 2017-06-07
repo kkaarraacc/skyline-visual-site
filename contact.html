@@ -85,6 +85,10 @@
 
 			.sub_button {border-radius: 4px;}
 
+            .sub_button:hover {
+                opacity: 0.9;
+            }
+
 			h3 {
 			letter-spacing: 5px;
 			text-transform: uppercase;
@@ -126,7 +130,7 @@
 		
 		<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
 			<h3 style="text-align:center;">Contact Us</h3>
-			<form>
+			<form method="post" action="form.php">
 				<table align="center">
 				<tr>
 					<td>
@@ -135,11 +139,8 @@
 				</tr>
 				<tr>
 					<td>
-						<input type="text" name="firstName" 
-						size="25" required />
-					
-						<input type="text" name="lastName"
-						size="25" required />
+						<input type="text" name="name" 
+						size="50" required />
 					</td>
 				</tr>
 				<tr>
@@ -150,18 +151,7 @@
 				<tr>
 					<td>
 						<input type="email" name="email" 
-						size="53" required />
-					</td>
-				</tr>
-				<tr>
-					<td>
-						Subject*
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<input type="text" name="subject"
-						size="53" required />
+						size="50" required />
 					</td>
 				</tr>
 				<tr>
@@ -182,6 +172,7 @@
 						value="SUBMIT" />
 					</td>
 				</tr>
+                </table>
 			</form>
 		</div>
 		
